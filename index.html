@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1>criar um header fixo para os outros projetos</h1>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="content-title">
+                <h1>MOVIES</h1>
+                <p>coloque a capa de seus filmes e séries favoritos</p>
+            </div>
+            <div class="content-form">
+                <label for="movie">Endereço da imagem:</label>
+                <input type="text" name="movie" id="movieUrl">
+                <p id="errorRepeatMovie"></p>
+                <button onclick="addMovie()">adicionar imagem</button>
+            </div>
+            <div id="movies" class="content-movies"></div>
+        </div>
+    </main>
+
+    <script src="./main.js"></script>
+</body>
+</html>

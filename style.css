@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&family=Roboto+Mono:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+:root {
+    --alert-color: #ffff5d;
+    --background-color-elements: #32050c;
+    --button-color: #BF8F54;
+    --detail-color: #bc6b1a;
+    --error-color: #ff0000;
+    --gradient-color: linear-gradient(#400A14, #32050c);
+    --second-color: #af7bc1;
+    --text-color: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--text-color);
+    background-image: var(--gradient-color);
+    min-height: 100vh;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+    font-size: 30px;
+    line-height: 1;
+}
+
+p,
+label {
+    font-size: 18px;
+}
+
+img {
+    max-height: 250px;
+    border-radius: 8px 8px 0px 0px;
+}
+
+input {
+    border: 1px solid #000;
+    border-radius: 4px;
+    padding: 4px 8px;
+}
+
+button {
+    padding: 8px 16px;
+    border: 2px solid var(--button-color);
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: .6px;
+    background-color: transparent;
+    color: var(--button-color);
+    transition: 200ms;
+}
+
+button:hover {
+    background-color: var(--button-color);
+    color: var(--background-color-elements);
+}
+
+/* ==== HEADER ======== */
+header {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    background-color: var(--background-color-elements);
+}
+
+/* ==== MAIN ========= */
+main {
+    margin: 48px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.content-title {
+    text-align: center;
+}
+
+.content-form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+}
+
+.content-form button {
+    margin-top: 4px;
+}
+
+.content-movies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.movie {
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+}
+
+.movie button {
+    border-radius: 0px 0px 8px 8px;
+}
