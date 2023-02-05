@@ -1,1 +1,2 @@
 - fazer o template em grid
+- adicionar título do filme

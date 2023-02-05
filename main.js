@@ -24,7 +24,9 @@ function renderMovie(movie) {
 
     newElementDivMovie.classList.add('movie')
     newElementImgMovie.src = movie
-    newElementButtonRemoveImg.addEventListener('onClick', removeMovie)
+    newElementButtonRemoveImg.onclick = function() {
+        removeMovie(newElementImgMovie.src, newElementDivMovie)
+    }
 
     elementDivMovies.appendChild(newElementDivMovie)
     newElementDivMovie.appendChild(newElementImgMovie)
@@ -32,6 +34,12 @@ function renderMovie(movie) {
     newElementButtonRemoveImg.appendChild(contentButtonRemoveImg)
 }
 
-function removeMovie() {
-    
+function removeMovie(imgUrl, divForRemove) {
+    console.log(imgUrl)
+    for(i = 0; i < movies.length; i++) {
+        if(imgUrl == movies[i]) {
+            divForRemove.parentNode.removeChild(divForRemove)
+            movies.splice(i, 1)
+        }
+    }
 }
